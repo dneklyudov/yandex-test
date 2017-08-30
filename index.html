@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="form-status">
+			<h4>Какой вернуть статус (в задании не было, сделано для удобства)</h4>
+			<span>
+				<input type="radio" name="status" value="success" id="status-success" checked>
+				<label for="status-success">Success</label>
+			</span>
+			<span>
+				<input type="radio" name="status" value="error" id="status-error">
+				<label for="status-error">Error</label>
+			</span>
+			<span>
+				<input type="radio" name="status" value="progress" id="status-progress">
+				<label for="status-progress">Progress</label>
+			</span>
+		</div>
+
+		<div class="result" id="resultContainer"></div>
+		
+		<div class="form" id="myForm">
+			<input class="form__field" type="text" name="fio" placeholder="ФИО">
+			<input class="form__field" type="text" name="email" placeholder="Электронная почта">
+			<input class="form__field" type="text" name="phone" placeholder="Номер телефона">
+			<input class="form__button" type="submit" id="submitButton" value="Отправить">
+		</div>
+
+	</div>
+
+</body>
+</html>
